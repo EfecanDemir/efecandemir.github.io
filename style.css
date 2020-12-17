@@ -361,7 +361,7 @@ header .mobil ul li ul li{
 h1 {
     font-size: 50px;
     text-shadow: 0px 4px 2px black;
-    margin-left: 5%;
+    margin-left: 1%;
 }
 h4{
     margin: 0;
@@ -692,7 +692,9 @@ textarea {
          width:80px;
          
      }
-
+     .baslik{
+         margin-left: -25%;
+     }
 }
 .heading {
     text-align: center;
