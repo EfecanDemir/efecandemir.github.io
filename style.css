@@ -39,18 +39,18 @@
     }
 
      .form .eleman{
-        margin-left: 5%;
-         width: 120px;
+        margin-left: 3%;
+         width: 160px;
          
     }
     .form textarea{
-        margin-left: 5%;
+        margin-left: 3%;
         width: 200px;
         height: 100px;
     }
     .form .elemanbuton
     {   
-        width: 120px;
+        width: 160px;
         margin-left: 10%;
     }
 }
