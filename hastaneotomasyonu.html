@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>EFECAN DEMİR</title>
+<meta name="keywords" content="EFECAN DEMİR">
+<meta name="description" content="EFECAN DEMİR">
+<meta name="author" content="Efecan">
+<link rel="icon" href="edlogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mobil ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mobil ul").removeClass("active");
+    });
+    });
+  </script>
+<body>
+    <!-- <img src="https://media.giphy.com/media/KBJTi1lxDGrfPsl8Hf/giphy.gif" height="80" width="100" onclick="topFunction()" id="myBtn"></img> -->
+   
+    <button onclick="topFunction()" id="myBtn">⟰</button>
+    <script>
+        /*kaynak belirt*/
+        window.onscroll = function() {myFunction()};   
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("yuklemeBar").style.width = scrolled + "%";
+        }
+    </script>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+        
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+
+<header>
+    <div class="mobil">
+    <div class="menu2">
+         <div class="logo"><a href="index.html" target="_blank"><img src="edlogo.png"></a></div>
+       <div class="hamburger-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+         <ul>
+            <li><a href="index.html" target="_blank">Ana Sayfa</a></li>
+
+            <li><a href="#çalışmalarım">Çalışmalarım</a>
+                <ul>
+             
+                   <li><a href="hastaneotomasyonu.html" target="_blank">Hastane Otomasyonu</a></li>
+             
+                   <li><a href="edvideooynatici.html" target="_blank" >ED Video Oynatıcı</a></li> 
+             
+                   <li><a href="edradyooynatici.html" target="_blank" >ED Radyo Uygulaması</a></li>
+                   
+                   <li><a href="insankaynaklari.html" target="_blank">İnsan Kaynakları Programı</a></li> 
+                 </ul>
+             
+                 </li>
+          
+            <li><a href="hakkimda.html" target="_blank">Hakkımda</a></li>
+          
+            
+          
+            <li><a href="galeri.html" target="_blank">Galeri</a></li>
+          
+            <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+          </ul> 
+    </div>
+    
+    </div>
+
+    <div class="container menu1">
+      <div class="logo"><a href="index.html" target="_blank"><img src="edlogo.png"></a></div>    
+        <ul>
+            <li><a href="index.html" target="_blank">Ana Sayfa</a></li>
+
+            <li><a href="#çalışmalarım">Çalışmalarım</a>
+                <ul>
+             
+                   <li><a href="hastaneotomasyonu.html" target="_blank">Hastane Otomasyonu</a></li>
+             
+                   <li><a href="edvideooynatici.html" target="_blank" >ED Video Oynatıcı</a></li> 
+             
+                   <li><a href="edradyooynatici.html" target="_blank" >ED Radyo Uygulaması</a></li>
+                   
+                   <li><a href="insankaynaklari.html" target="_blank">İnsan Kaynakları Programı</a></li> 
+                 </ul>
+             
+                 </li>
+          
+            <li><a href="hakkimda.html" target="_blank">Hakkımda</a></li>
+          
+            
+          
+            <li><a href="galeri.html" target="_blank">Galeri</a></li>
+          
+            <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+          </ul> 
+        
+    </div>
+</header>
+
+<div class="bolumcalismalar"></div>
+<div class="container">
+    <div class="orta">
+        <div class="ortap">
+            <h1>Hastane Otomasyonu</h1><br><br>
+
+            Bu projede amaç, hastanelerde ki işlemleri kolaylaştırmak ve hızlandırmaktır. Bu yazılım hastanelerde ortak veritabanı üzerinden işlem hareketliliği takibi sağlamayı amaçlar. Hastane otomasyonları, hastanın kaydı alınmasından itibaren tedavi süreci sonlanana kadar ki bilgileri kayıt altına almaktadır. Bu süreçte verilerin kayıt altına alınması ve bu kayıtların ulaşılabilirlik durumunu hızlandırmak amaçlanmıştır.<br><br><br>
+           
+            <img src="hastanebolum.jpg" width="100%" height="100%"/>
+                 
+            
+            Programı indirmek için...
+            <a href="Hastane_Setup.rar"><img src="download.png"  height="60" width="60"/></a>
+            
+            
+            
+
+
+
+
+        
+        </div>
+    </div>
+</div>
+    <div class="clear"></div>
+    <footer>
+        <div class="container">
+            
+            <div class="column-33">
+                <span class="line"><h2 class="title">Sayfalar</h2></span> <br>
+                    <a class="info" href="index.html" target="_blank">Ana Sayfa</a> <br>
+                    <a class="info" href="" >Çalışmalarım</a> <br>
+                    <a class="info" href="hastaneotomasyonu.html" target="_blank" >🔸Hastane Otomasyonu</a> <br>
+                    <a class="info" href="edvideooynatici.html" target="_blank" >🔸ED Video Oynatıcı</a> <br>
+                    <a class="info" href="edradyooynatici.html" target="_blank" >🔸ED Radyo Uygulaması</a> <br>
+                    <a class="info" href="insankaynaklari.html" target="_blank">🔸İnsan Kaynakları Programı</a> <br>
+                    <a class="info" href="hakkimda.html" target="_blank">Hakkımda</a> <br>
+                    <a class="info" href="galeri.html" target="_blank">Galeri</a> <br>
+                    <a class="info" href="iletisim.html" target="_blank">İletişim</a>
+            </div>
+            <div class="column-33">
+                <span class="line"><h2 class="title">Sosyal Medya</h2></span><br><br>
+                <a href="https://www.instagram.com/efecndmr/"><img src="Instagram.png"  height="50" width="50"/></a><br>
+                <a href="https://www.youtube.com/channel/UCBXXvxrK40ae5A8JckLh8_A"><img src="youtube.png"  height="60" width="60"/></a>
+                <a href="https://github.com/EfecanDemir"><img src="github.jpg"  height="60" width="60"/></a>
+           
+            </div>
+            <div class="column-33">
+                <span class="line"><h2 class="title">İletişim</h2></span><br>
+                <span class="info">
+                Efecan Demir<br>
+                0 542 797 15 45<br>
+                demir.efecan@hotmail.com<br>
+                Etimesgut/ANKARA<br><br><br>
+                Copyright © 2020 by Efecan Demir
+                </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>

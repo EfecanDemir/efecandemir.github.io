@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>EFECAN DEMİR</title>
+<meta name="keywords" content="EFECAN DEMİR">
+<meta name="description" content="EFECAN DEMİR">
+<meta name="author" content="Efecan">
+<link rel="icon" href="edlogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mobil ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mobil ul").removeClass("active");
+    });
+    });
+  </script> 
+</head>
+
+<body>
+    <!-- <img src="https://media.giphy.com/media/KBJTi1lxDGrfPsl8Hf/giphy.gif" height="80" width="100" onclick="topFunction()" id="myBtn"></img> -->
+   
+    <button onclick="topFunction()" id="myBtn">⟰</button>
+    
+    <script>
+        /*kaynak belirt*/
+        window.onscroll = function() {myFunction()};   
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("yuklemeBar").style.width = scrolled + "%";
+        }
+    </script>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+        
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }        
+    </script>
+    <script>
+      function bilgiDuzenle() 
+      {
+        document.getElementById("kisiselBilgi").contentEditable = true;    
+      }
+   
+    </script>
+  
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("#pdfİndir").live("click", function () {
+            var divContents = $("#CV").html();
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write(divContents);
+            printWindow.document.close();
+            printWindow.print();
+        });
+    </script>
+
+<header>
+    <div class="mobil">
+    <div class="menu2">
+         <div class="logo"><a href="index.html" target="_blank"><img src="edlogo.png"></a></div>
+       <div class="hamburger-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+         <ul>
+            <li><a href="index.html" target="_blank">Ana Sayfa</a></li>
+
+            <li><a href="#çalışmalarım">Çalışmalarım</a>
+                <ul>
+             
+                   <li><a href="hastaneotomasyonu.html" target="_blank">Hastane Otomasyonu</a></li>
+             
+                   <li><a href="edvideooynatici.html" target="_blank" >ED Video Oynatıcı</a></li> 
+             
+                   <li><a href="edradyooynatici.html" target="_blank" >ED Radyo Uygulaması</a></li>
+                   
+                   <li><a href="insankaynaklari.html" target="_blank">İnsan Kaynakları Programı</a></li> 
+                 </ul>
+             
+                 </li>
+          
+            <li><a href="hakkimda.html" target="_blank">Hakkımda</a></li>
+          
+            
+          
+            <li><a href="galeri.html" target="_blank">Galeri</a></li>
+          
+            <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+          </ul> 
+    </div>
+    
+    </div>
+
+    <div class="container menu1">
+      <div class="logo"><a href="index.html" target="_blank"><img src="edlogo.png"></a></div>    
+        <ul>
+            <li><a href="index.html" target="_blank">Ana Sayfa</a></li>
+
+            <li><a href="#çalışmalarım">Çalışmalarım</a>
+                <ul>
+             
+                   <li><a href="hastaneotomasyonu.html" target="_blank">Hastane Otomasyonu</a></li>
+             
+                   <li><a href="edvideooynatici.html" target="_blank" >ED Video Oynatıcı</a></li> 
+             
+                   <li><a href="edradyooynatici.html" target="_blank" >ED Radyo Uygulaması</a></li>
+                   
+                   <li><a href="insankaynaklari.html" target="_blank">İnsan Kaynakları Programı</a></li> 
+                 </ul>
+             
+                 </li>
+          
+            <li><a href="hakkimda.html" target="_blank">Hakkımda</a></li>
+          
+            
+          
+            <li><a href="galeri.html" target="_blank">Galeri</a></li>
+          
+            <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+          </ul> 
+        
+    </div>
+</header>
+
+<div class="bolumcalismalar"></div>
+<div class="container">
+    <div class="orta">
+        <div class="ortap">
+            <div class="col-sm-1 ">
+                <div id="CV" > 
+                  <table id="kisiselBilgi" class="kisiselBilgi">        
+                      <p class="edfoto"><img src="ED.jpg"></p>
+                      <caption> <h1>Kişisel Bilgiler</h1></caption>
+                      <tr> 
+                        <td class="bilgiler">
+                             
+                          <p>Ad Soyad: Efecan DEMİR </p>
+                          <p>Doğum Tarihi: 18.07.2000 </p>
+                          <p>Doğum Yeri: Altındağ/ANKARA</p> 
+                          <p>Uyruk: TC </p>
+                          <p>Medeni Durum: Bekar </p>
+                          <p>Adres: Etimesgut/ANKARA</p>  
+                          <p>Telefon Numarası: 0542 797 15 45</p> <p>E-Posta: demir.efecan@hotmail.com</p> 
+                          <p>Sürücü Ehliyeti: B</p>    
+                            
+                               
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <td class="bilgiler">
+                            <h3>Eğitim Bilgileri</h3>
+                            <p>Eylül 2014-Temmuz 2018:<br> Şevket Raşit Hatipoğlu Anadolu Lisesi</p> 
+                            <p>Eylül 2018-Devam ediyor:<br> Kocaeli Üniversitesi/Bilişim Sistemleri Mühendisliği</p>
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <td class="bilgiler">
+                            <h3>İş Deneyimi</h3>
+                          <p>2019-2020 BGS Ltd. Microstation </p>   
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <td class="bilgiler">
+                            <h3>Yetenek</h3>
+                          <p>C#: Orta Seviye </p>
+                          <p>Mysql: Orta Seviye </p>
+                          <p>HTML: Başlangıç Seviye </p>
+                          <p>C: Başlangıç Seviye </p>
+                          <p>Python: Orta Seviye</p>  <p>Microstation: İleri Seviye </p>
+                          <p>AutoCAD: Orta Seviye</p>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <td class="bilgiler">
+                            <h3>Dil</h3>
+                          <p>İngilizce: C1 Sertifikası </p>
+                          <p>Almanca: A1 Düzeyi </p>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <td class="bilgiler">
+                            <h3>İlgi Alanları</h3>
+                          <p>Bağlama, gitar ve piyano çalmak. </p>
+                          <p>Dağcılık </p>
+                        </td>
+                      </tr>
+                   </table> 
+                     </div>
+                    <div class="cv">
+            <input onclick="bilgiDuzenle();" class="eleman" type="button" value="Düzenle" id="düzenle"/>  
+            <input id="pdfİndir" class="eleman" value="İndir" type="button" onclick="HTMLtoPDF()">
+             
+          </div>
+              
+              </div>
+            </div>
+           </div>      
+        </div>  
+    
+    <div class="clear"></div>
+    <footer>
+        <div class="container">
+            
+            <div class="column-33">
+                <span class="line"><h2 class="title">Sayfalar</h2></span> <br>
+                    <a class="info" href="index.html" target="_blank">Ana Sayfa</a> <br>
+                    <a class="info" href="" >Çalışmalarım</a> <br>
+                    <a class="info" href="hastaneotomasyonu.html" target="_blank">🔸Hastane Otomasyonu</a> <br>
+                    <a class="info" href="edvideooynatici.html" target="_blank" >🔸ED Video Oynatıcı</a> <br>
+                    <a class="info" href="edradyooynatici.html" target="_blank" >🔸ED Radyo Uygulaması</a> <br>
+                    <a class="info" href="insankaynaklari.html" target="_blank" >🔸İnsan Kaynakları Programı</a> <br>
+                    <a class="info" href="hakkimda.html" target="_blank">Hakkımda</a> <br>
+                    <a class="info" href="galeri.html" target="_blank">Galeri</a> <br>
+                    <a class="info" href="iletisim.html" target="_blank">İletişim</a>
+            </div>
+            <div class="column-33">
+                <span class="line"><h2 class="title">Sosyal Medya</h2></span><br><br>
+                <a href="https://www.instagram.com/efecndmr/"><img src="Instagram.png"  height="50" width="50"/></a><br>
+                <a href="https://www.youtube.com/channel/UCBXXvxrK40ae5A8JckLh8_A"><img src="youtube.png"  height="60" width="60"/></a>
+                <a href="https://github.com/EfecanDemir"><img src="github.jpg"  height="60" width="60"/></a>
+           
+              </div>
+            <div class="column-33">
+                <span class="line"><h2 class="title">İletişim</h2></span><br>
+                <span class="info">
+                Efecan Demir<br>
+                0 542 797 15 45<br>
+                demir.efecan@hotmail.com<br>
+                Etimesgut/ANKARA<br><br><br>
+                Copyright © 2020 by Efecan Demir
+                </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>
