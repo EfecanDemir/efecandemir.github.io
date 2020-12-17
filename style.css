@@ -696,6 +696,9 @@ textarea {
          margin-left: -35%;
          font-size: 40px;
      }
+     footer{
+         width: 100%;
+     }
 }
 .heading {
     text-align: center;
