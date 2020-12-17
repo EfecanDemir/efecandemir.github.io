@@ -699,6 +699,12 @@ textarea {
      footer{
          width: 100%;
      }
+     .column-33 {
+    width: 100%;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
 }
 .heading {
     text-align: center;
