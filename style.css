@@ -24,6 +24,9 @@
         margin-left: 25%;
     }
 @media screen and (max-width : 767px ){
+	.genel{
+         width: 100%;
+     }
     .orta{
     width:90%;
     background-color: #fff;
