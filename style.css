@@ -481,17 +481,7 @@ span {
     color: #fff;
 }
 
-.progress-container {
-    width: 100%;
-    height: 4px;
-    background: #BF7E04;
-  }
-  
-.progress-bar {
-    height: 4px;
-    background: #000;
-    width: 0%;
-  }
+
 .kisisel{
     color: #383e42;
 }
